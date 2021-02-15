@@ -1,13 +1,20 @@
 pipline {
-  agent any {
-    stage build {
-      echo "Building new application...........!"
-    }
-    stage test {
-      echo "Testting new application...........!"
-    }
-    stage deploy {
-      echo "deploying new application...........!"
+  agent any
+    stages {
+      stage('Build') {
+        steps {
+          echo "Building new application...........!"
+        }
+      }
+    stage('Build') {
+        steps {
+          echo "Building new application...........!"
+        }
+      }
+    stage('Build') {
+        steps {
+          echo "Building new application...........!"
+        }
     }
   }
 }
