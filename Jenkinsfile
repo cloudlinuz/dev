@@ -1,4 +1,4 @@
-pipline{
+pipline {
   agent any {
     stage build {
       echo "Building new application...........!"
